@@ -1,0 +1,33 @@
+# Environments and secrets
+.venv/
+.env
+
+# Python byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+wheels/
+*.egg-info/
+.eggs/
+
+# IDEs and editors
+.idea/
+.vscode/
+
+# Tooling caches (Ruff, Mypy, Pytest)
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+
+# OS generated files
+Thumbs.db
+.DS_Store
