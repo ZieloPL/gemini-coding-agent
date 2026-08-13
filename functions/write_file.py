@@ -24,17 +24,17 @@ def write_file(working_directory, file_path, content):
 
 schema_write_file = types.FunctionDeclaration(
     name='write_file',
-    description='.',
+    description="Overwrites an existing file or write to a new file if it doesn't exist (and creates required parent dirs safely), constrained to the working directory.",
     parameters=types.Schema(
         type=types.Type.OBJECT,
         properties={
             "file_path": types.Schema(
                 type=types.Type.STRING,
-                description="The directory to list files from, relative to the working directory. If not provided, lists files in the working directory itself.",
+                description="The path to the file to write.",
             ),
             "content": types.Schema(
                 type=types.Type.STRING,
-                description="The directory to list files from, relative to the working directory. If not provided, lists files in the working directory itself.",
+                description="The contents to write to the file as a string.",
             )
         }
     )
