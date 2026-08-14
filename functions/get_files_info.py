@@ -5,12 +5,12 @@ from google.genai import types
 # - src: file_size=128 bytes, is_dir=True
 # - package.json: file_size=1234 bytes, is_dir=False
 
-def get_files_info(working_directory: str, sub_dir='.'):
+def get_files_info(working_directory: str, directory='.'):
 
     abs_working_dir = os.path.abspath(working_directory)
-    abs_dir = os.path.abspath(os.path.join(working_directory, sub_dir))
+    abs_dir = os.path.abspath(os.path.join(working_directory, directory))
     if not abs_dir.startswith(abs_working_dir):
-        return f"Error: {sub_dir} is not in a working dir"
+        return f"Error: {directory} is not in a working dir"
 
     final_response = ''
     contents = os.listdir(abs_dir)
