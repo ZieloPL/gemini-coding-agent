@@ -16,6 +16,7 @@ def main():
     #
     # dots_contents = get_files_info('calculator', '../')
     # print(dots_contents)
+    # print(get_files_info('calculator', '.'))
 
 
     # get_file_content tests:
@@ -26,7 +27,7 @@ def main():
     # print(get_file_content(working_dir, '/bin/cat'))
 
     # write_file tests:
-    # print(write_file("calculator", "lorem.txt", "wait, this isn't lorem ipsum"))
+    # print(write_file("calculator", ".", "wait, this isn't lorem ipsum"))
     # print(write_file("calculator", "pkg/morelorem.txt", "lorem ipsum dolor sit amet"))
     # print(write_file("calculator", "/tmp/temp.txt", "this should not be allowed"))
     # print(write_file("calculator", "pkg2/temp.txt", "this should be allowed"))
@@ -38,9 +39,6 @@ def main():
     # print(run_python_file("calculator", "../main.py"))
     # print(run_python_file("calculator", "nonexistent.py"))
     print(run_python_file("calculator", "lorem.txt"))
-
-
-
 
 
 main()

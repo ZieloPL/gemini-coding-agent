@@ -12,7 +12,7 @@ def call_function(function_call_part, verbose: bool = False):
     if verbose:
         print(f"Calling function: {function_call_part.name}({function_call_part.args})")
     else:
-        print(f" - Calling function: {function_call_part.name}")
+        print(f" - Calling function: {function_call_part.name}({function_call_part.args})")
 
     result = ""
     if function_call_part.name == "get_files_info":
