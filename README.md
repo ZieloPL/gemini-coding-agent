@@ -1,4 +1,4 @@
-# GeminiAgent 🤖
+# Gemini Coding Agent 🤖
 
 GeminiAgent is an autonomous, lightweight AI coding assistant powered by the Google Gemini API (specifically optimized for models like `gemini-3.1-flash-lite`). It operates seamlessly within your local environment, utilizing function calling to inspect directories, read source code, write or modify files, and execute Python scripts to verify its own solutions.
 
@@ -25,8 +25,8 @@ curl -LsSf [https://astral.sh/uv/install.sh](https://astral.sh/uv/install.sh) | 
 ### 2. Setup
 Clone the repository and set up the environment:
 ```bash
-git clone [https://github.com/yourusername/GeminiAgent.git](https://github.com/yourusername/GeminiAgent.git)
-cd GeminiAgent
+git clone https://github.com/ZieloPL/gemini-coding-agent.git
+cd gemini-coding-agent
 
 # Create a virtual environment and install dependencies
 uv venv
